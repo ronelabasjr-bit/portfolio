@@ -61,7 +61,7 @@ nav {
     color: #2563eb;
 }
 
-/* Hero Section */
+/* Hero Section & Profile Photo */
 .hero {
     height: 100vh;
     display: flex;
@@ -69,7 +69,21 @@ nav {
     justify-content: center;
     background: linear-gradient(135deg, #f0f4f8 0%, #dbeafe 100%);
     text-align: center;
-    padding: 0 2rem;
+    padding: 2rem;
+}
+
+.profile-photo-container {
+    margin-bottom: 1.5rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    object-fit: cover;
+    background-color: #cbd5e1;
 }
 
 .hero-content h1 {
@@ -86,7 +100,7 @@ nav {
 }
 
 .hero-content p {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 2rem;
     color: #64748b;
     line-height: 1.6;
@@ -96,6 +110,7 @@ nav {
     color: #2563eb;
 }
 
+/* Buttons System */
 .btn {
     display: inline-block;
     background: #2563eb;
@@ -111,7 +126,44 @@ nav {
     background: #1d4ed8;
 }
 
-/* Projects Section */
+.btn-sm {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2563eb;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.btn-sm:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-secondary:hover {
+    background: #cbd5e1;
+}
+
+.btn-hf {
+    background: #ffbd59; /* Hugging Face Vibe */
+    color: #1e293b;
+}
+
+.btn-hf:hover {
+    background: #ffa826;
+}
+
+/* Projects Section Layout */
 .projects-section {
     background: #fff;
 }
@@ -134,6 +186,9 @@ nav {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -174,9 +229,16 @@ nav {
     color: #64748b;
     line-height: 1.5;
     font-size: 0.95rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Skills Section */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+/* Skills Section Layout */
 .skills-section {
     background: #f8fafc;
 }

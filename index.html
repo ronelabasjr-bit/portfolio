@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Ronel S. Abas Jr. | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -21,9 +22,12 @@
 
     <header id="about" class="hero">
         <div class="hero-content">
+            <div class="profile-photo-container">
+                <img src="assets/profile.png" alt="Ronel S. Abas Jr." class="profile-photo">
+            </div>
             <h1>Hi, I'm <span class="highlight">Ronel S. Abas Jr.</span></h1>
             <h2>Back-End & Machine Learning Engineer</h2>
-            <p>Computer Science graduate specializing in building robust back-end systems and practical computer vision applications. I bridge the gap between complex data models and functional web experiences.</p>
+            <p>Computer Science graduate specializing in building robust back-end systems, interactive RAG pipelines, and computer vision applications. I bridge the gap between complex data models and functional web experiences.</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </header>
@@ -31,15 +35,33 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            
             <div class="projects-grid">
                 
                 <div class="project-card">
                     <div class="project-tags">
-                        <span>YOLOv8</span><span>Streamlit</span><span>Python</span>
+                        <span>YOLOv8</span><span>Streamlit</span><span>Python</span><span>OpenCV</span>
                     </div>
                     <h3>Agricultural Computer Vision Dashboard</h3>
                     <p class="project-meta">Thesis Project</p>
                     <p>An interactive AI dashboard engineered to detect and segment overlapping fruit clusters for precise harvest estimations. Conducted 9 iterative experiments to optimize model configurations and handle data occlusion challenges.</p>
+                    <div class="project-links">
+                        <a href="https://papayawebapp.streamlit.app/" target="_blank" class="btn-sm"><i class="fas fa-external-link-alt"></i> View Live App</a>
+                        <a href="https://github.com/ronelabasjr-bit/portfolio" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span>RAG</span><span>Hugging Face</span><span>Python</span><span>LLM</span>
+                    </div>
+                    <h3>Manobo Cultural Knowledge System</h3>
+                    <p class="project-meta">AI & Knowledge Retrieval Application</p>
+                    <p>A Retrieval-Augmented Generation (RAG) system built to preserve and query indigenous cultural information regarding the Manobo tribe. Implemented semantic text embeddings and document indexing pipelines for highly accurate context retrieval.</p>
+                    <div class="project-links">
+                        <a href="https://ronabs-manobo-cultural-system.hf.space/" target="_blank" class="btn-sm btn-hf"><i class="fas fa-brain"></i> Explore Space</a>
+                        <a href="https://github.com/ronelabasjr-bit/portfolio" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
                 </div>
 
                 <div class="project-card">
@@ -49,6 +71,9 @@
                     <h3>Full-Stack Ticketing & Issue Tracker</h3>
                     <p class="project-meta">Web Application</p>
                     <p>A dynamic, secure issue tracking system featuring user authentication, role-based access control, and real-time support ticket management. Built with a structured relational database backend.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ronelabasjr-bit/portfolio" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub Repo</a>
+                    </div>
                 </div>
 
             </div>
@@ -64,12 +89,12 @@
                     <p>Python, PHP, SQL, JavaScript, HTML5, CSS3</p>
                 </div>
                 <div class="skill-category">
-                    <h3>AI & Computer Vision</h3>
-                    <p>YOLOv8, Streamlit, OpenCV, Image Preprocessing & Augmentation</p>
+                    <h3>AI, RAG & Vision</h3>
+                    <p>YOLOv8, RAG Architecture, Vector Embeddings, Streamlit, OpenCV</p>
                 </div>
                 <div class="skill-category">
                     <h3>Web Backend & Tools</h3>
-                    <p>Relational Database Design (MySQL), Session Management, Bootstrap, Git</p>
+                    <p>Relational Database Design (MySQL), Authentication, Bootstrap, Git, Hugging Face Spaces</p>
                 </div>
             </div>
         </div>

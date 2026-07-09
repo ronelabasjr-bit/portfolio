@@ -1,8 +1,45 @@
-<div class="projects-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronel S. Abas Jr. | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">DevPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="about" class="hero">
+        <div class="hero-content">
+            <div class="profile-photo-container">
+                <img src="assets/profile.jpg" alt="Ronel S. Abas Jr." class="profile-photo">
+            </div>
+            <h1>Hi, I'm <span class="highlight">Ronel S. Abas Jr.</span></h1>
+            <h2>Back-End & Machine Learning Engineer</h2>
+            <p>Computer Science graduate specializing in building robust back-end systems and practical computer vision applications. I bridge the gap between complex data models and functional web experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
                 
                 <div class="project-card">
                     <div class="project-tags">
-                        <span>YOLOv8</span><span>Streamlit</span><span>Python</span><span>OpenCV</span>
+                        <span>YOLOv8</span><span>Streamlit</span><span>Python</span>
                     </div>
                     <h3>Agricultural Computer Vision Dashboard</h3>
                     <p class="project-meta">Thesis Project</p>
@@ -15,39 +52,44 @@
 
                 <div class="project-card">
                     <div class="project-tags">
-                        <span>RAG</span><span>Hugging Face</span><span>Python</span><span>LLM</span>
-                    </div>
-                    <h3>Manobo Cultural Knowledge System</h3>
-                    <p class="project-meta">AI & Knowledge Retrieval Application</p>
-                    <p>A Retrieval-Augmented Generation (RAG) system built to preserve and query indigenous cultural information regarding the Manobo tribe. Implemented semantic text embeddings and document indexing pipelines for highly accurate context retrieval.</p>
-                    <div class="project-links">
-                        <a href="https://ronabs-manobo-cultural-system.hf.space/" target="_blank" class="btn-sm btn-hf"><i class="fas fa-brain"></i> Explore Space</a>
-                        <a href="https://github.com/ronelabasjr-bit/manobo-rag-system" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> Source Code</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-tags">
-                        <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>EDA</span>
-                    </div>
-                    <h3>Exploratory Data Analysis Pipeline</h3>
-                    <p class="project-meta">Data Analytics Project</p>
-                    <p>A comprehensive exploratory data analysis (EDA) notebook focused on data cleaning, statistical profiling, correlation analysis, and visualization of retail product demand to uncover key business insights and demand drivers.</p>
-                    <div class="project-links">
-                        <a href="https://colab.research.google.com/drive/1ptO32PPEhQ2LpOToZ0pS4_WgfrwUSseA?usp=sharing" target="_blank" class="btn-sm btn-colab"><i class="fas fa-chart-bar"></i> View Notebook</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-tags">
                         <span>PHP</span><span>SQL</span><span>Bootstrap</span><span>JS</span>
                     </div>
                     <h3>Full-Stack Ticketing & Issue Tracker</h3>
                     <p class="project-meta">Web Application</p>
                     <p>A dynamic, secure issue tracking system featuring user authentication, role-based access control, and real-time support ticket management. Built with a structured relational database backend.</p>
                     <div class="project-links">
-                        <a href="#" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub Repo</a>
+                        <a href="https://github.com/ronelabasjr-bit/portfolio" target="_blank" class="btn-sm btn-secondary"><i class="fab fa-github"></i> GitHub Repo</a>
                     </div>
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Toolbox</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Core Languages</h3>
+                    <p>Python, PHP, SQL, JavaScript, HTML5, CSS3</p>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Computer Vision</h3>
+                    <p>YOLOv8, Streamlit, OpenCV, Image Preprocessing & Augmentation</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Backend & Tools</h3>
+                    <p>Relational Database Design (MySQL), Session Management, Bootstrap, Git</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ronel S. Abas Jr. Built with HTML, CSS, and Vanilla JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

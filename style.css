@@ -277,3 +277,10 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
 }
+.btn-colab {
+    background: #f57c00 !important; /* Colab Orange Theme */
+    color: #fff !important;
+}
+.btn-colab:hover {
+    background: #e65100 !important;
+}
